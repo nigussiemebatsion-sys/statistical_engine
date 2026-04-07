@@ -13,7 +13,7 @@ print("Outliers:", engine.get_outliers(threshold=2))
 # Part 2: Monte Carlo Simulation
 print("\n=== Part 2: Monte Carlo Simulation ===")
 from src.monte_carlo import simulate_crashes  # importing the module inorder to access the function that is definied inside the module.
-days_list = [10, 100, 1000, 10000]
+days_list = [30, 100, 1000, 10000]
 for days in days_list:
     crash_prob=simulate_crashes(days)
     print(f"Estimated crash probability over {days} days: {crash_prob:.4f}")    
