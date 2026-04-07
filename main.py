@@ -16,6 +16,7 @@ from src.monte_carlo import simulate_crashes  # importing the module inorder to 
 days_list = [30, 100, 1000, 10000]
 for days in days_list:
     crash_prob=simulate_crashes(days)
+    print(f"Estimated crash probability over {days} days: {crash_prob:.4f}")
 import json
 from src.stat_engine import StatEngine
 
